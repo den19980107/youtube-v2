@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <h1>logo!</h1>
+            </div>
+            <div class="menu">
+                <a href="/CreateRoom">sign in</a>
+                <a href="#">about</a>
+                <a href="#">setting</a>
+                <a href="#">donate</a>
+            </div>
+
+        </div>
+    </header>
+    <section>
+        <div class="leftbox">
+            <div class="serchbar">
+                <div class="title-left">
+                    <p id="Main-Title">影片名稱</p>
+                </div>
+
+                <div class="serchbox">
+                    <form action="#" onsubmit="searchOnClick()">
+                        <input type="submit" value="搜尋">
+                        <input id="search-text" type="text" placeholder="請輸入想找的影片">
+
+                    </form>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="mainvideo">
+                <div id="player">
+                </div>
+            </div>
+            <div class="playbar">
+                <button id="playbtn">播放</button>
+                <input id="slider" type="range" step="0.001" value="0" min="0" max="100">
+                <div id="time-box">
+                    <p id="time">00:00</p>
+                </div>
+            </div>
+            <div id="playList">
+                <!-- <div class="ListVideo">
+                    <img src="https://www.youtube.com/yts/img/yt_1200-vfl4C3T0K.png" alt="">
+                    <p class="title">標題</p>
+                    <p class="creater">作者：</p>
+                </div> -->
+            </div>
+
+        </div>
+        <div class="rightbox">
+            <div class="facetime">
+
+            </div>
+            <div class="chatbox">
+                <div class="chat-navbar">
+                    <div class="logo">
+                        <h1>chat!</h1>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <ul id="textArea">
+
+                    </ul>
+                </div>
+                <div class="insert-box">
+
+                    <input id="textInput" type="text" placeholder="請輸入聊天內容">
+                    <input id="sendBtn" type="submit" value="送出">
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/youtube-search.js"></script>
+    <script src="./js/playbar.js"></script>
+    <script src="./js/chat.js"></script>
+    <script src="https://apis.google.com/js/client.js?onlodad=init"></script>
+</body>
+
+</html>

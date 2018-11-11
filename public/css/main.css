@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #e8e8e8
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #ccc;
+}
+
+header .logo {
+    height: 100%;
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+header .logo h1 {
+    padding: 10px;
+}
+
+header .menu {
+    height: 100%;
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+header .menu a {
+    text-decoration: none;
+    width: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: #fff;
+    background: #333;
+}
+
+section {
+    width: 1000px;
+    height: 200vh;
+    margin: 0 auto;
+}
+
+.clr {
+    clear: both;
+}
+
+.leftbox {
+    width: 65%;
+    height: auto;
+    position: relative;
+    float: left;
+    border: 1px solid rgb(190, 190, 190);
+    box-sizing: border-box;
+    background: #333;
+
+}
+
+.leftbox .serchbar {
+    width: 100%;
+    height: 60 auto;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
+
+}
+
+.title-left {
+
+    height: 100%;
+    width: 60%;
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+
+.leftbox .serchbar .title {
+
+    display: inline;
+}
+
+/* 把一個元件垂直至中在navbar中  */
+/* 需要先把要置中的元件用一個div包起來 */
+/* 將外部div高度設為100% */
+/* display: flex */
+/* align-item:center 表示把這個div裡面的元件垂直置中 */
+.leftbox .serchbar .serchbox {
+    /* 外div */
+    height: 100%;
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+.leftbox .serchbar .serchbox input[type="submit"] {
+    border: none;
+    background: black;
+    color: #fff;
+    font-weight: 300;
+}
+
+.leftbox .serchbar .serchbox input {
+    /* 內div */
+
+    padding: 10px;
+}
+
+/* 把一個元件垂直至中在navbar中  */
+
+.rightbox {
+    width: 35%;
+    height: 100%;
+    position: relative;
+    float: right;
+
+
+    box-sizing: border-box;
+}
+
+.mainvideo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #333;
+}
+
+.mainvideo #player {
+    margin: 0 auto;
+}
+
+#playList {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+    height: 100%;
+    background: #333;
+}
+
+#playList .ListVideo {
+    position: relative;
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 300px;
+    background: #e8e8e8;
+    border: 4px solid #333;
+    color: #333;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#playList .ListVideo img {
+    width: 100%;
+    height: 39.375%vw;
+    border-radius: 5px;
+}
+
+#playList .ListVideo .title {
+
+    font-size: 10px;
+    text-align: center;
+}
+
+#playList .ListVideo .creater {
+
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    bottom: 5px;
+}
+
+
+.playbar {
+    height: 40px;
+    padding-right: 10px;
+    background: #000;
+}
+
+.playbar button {
+    height: 40px;
+    width: 8%;
+    margin-right: 10px;
+    padding: 0;
+    position: relative;
+    float: left;
+    border: none;
+    background: red;
+    color: white;
+}
+
+.playbar input {
+    height: 40px;
+    width: 83%;
+    margin: 0;
+    padding: 0px;
+    position: relative;
+    float: left;
+
+}
+
+.playbar #time {
+    height: 40px;
+    width: 6%;
+    display: inline-block;
+}
+
+.playbar #time-box p {
+    margin-top: 10px;
+    padding-left: 3px;
+    text-align: center;
+    color: white;
+}
+
+
+/* done of left box */
+
+/* right box */
+.facetime {
+    width: 100%;
+    height: 250px;
+    background: #333;
+}
+
+
+.chatbox {
+    width: 100%;
+    height: 500px;
+    background: #ccc;
+}
+
+.chatbox .chat-navbar {
+    width: 100%;
+    height: 50px;
+    background: rgb(122, 238, 87);
+}
+
+.chatbox .chat-navbar .logo {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.chatbox .chat-navbar .logo h1 {
+    padding: 0;
+    margin-top: 12px;
+}
+
+.chatbox textarea {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+.chatbox .text-container {
+    width: 100%;
+    height: 450px;
+    border: none;
+    background: #fff;
+}
+
+.chatbox .text-container .textArea {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+.outsideDiv {
+    width: 100%;
+    height: 70px;
+}
+
+.othermessage {
+    width: 55%;
+    height: 40px;
+    list-style: none;
+    background: rgb(229, 229, 234);
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+.mymessage {
+    width: 55%;
+    height: 40px;
+    list-style: none;
+    float: right;
+    background: rgb(77, 151, 242);
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+.chatbox .insert-box {
+    width: 100%;
+    height: 50px;
+}
+
+.chatbox .insert-box input[type="text"] {
+    height: 100%;
+    width: 80%;
+    border: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.chatbox .insert-box input[type="submit"] {
+    height: 100%;
+    width: 18%;
+    color: #fff;
+    background: #333;
+    box-sizing: border-box;
+    border: none;
+}
